@@ -25,22 +25,26 @@ function App() {
 
 	return (
 		<div>
-			<h2>Let's get started!</h2>
 			<ExpenseItem
 				title={DUMMY_EXPENSES[0].title}
 				amount={DUMMY_EXPENSES[0].amount}
 				date={DUMMY_EXPENSES[0].date}
-			></ExpenseItem>
+			/>
 			<ExpenseItem
 				title={DUMMY_EXPENSES[1].title}
 				amount={DUMMY_EXPENSES[1].amount}
 				date={DUMMY_EXPENSES[1].date}
-			></ExpenseItem>
+			/>
 			<ExpenseItem
 				title={DUMMY_EXPENSES[2].title}
 				amount={DUMMY_EXPENSES[2].amount}
 				date={DUMMY_EXPENSES[2].date}
-			></ExpenseItem>
+			/>
+			<ExpenseItem
+				title={DUMMY_EXPENSES[3].title}
+				amount={DUMMY_EXPENSES[3].amount}
+				date={DUMMY_EXPENSES[3].date}
+			/>
 		</div>
 	);
 }
