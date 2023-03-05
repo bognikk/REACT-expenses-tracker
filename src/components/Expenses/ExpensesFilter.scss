@@ -1,5 +1,6 @@
+@use "../../partials/variables" as *;
+
 .expenses-filter {
-	// padding: 0 1rem;
 	color: white;
 
 	&__control {
@@ -8,17 +9,39 @@
 		justify-content: space-between;
 		width: 100%;
 		margin: 1rem 0;
-	}
 
-	& label {
-		margin-bottom: 0.5rem;
-		font-weight: bold;
-	}
+		label {
+			font-weight: 700;
+			font-size: 1.25rem;
+		}
 
-	& select {
-		padding: 0.5rem 3rem;
-		border-radius: 6px;
-		font-weight: bold;
-		font: inherit;
+		select {
+			padding: 0.75rem 1.5rem;
+			min-width: 135px;
+			border-radius: 6px;
+			font-weight: 700 !important;
+			text-align: left;
+			background-color: $brand-two;
+			color: $primary-black;
+			font: inherit;
+			cursor: pointer;
+			/** for the dropdown indicator */
+			appearance: none;
+			background-image: url("../../../public/pngegg.png");
+			background-repeat: no-repeat;
+			background-position: right 1rem center;
+			background-size: 1em;
+
+			&:hover {
+				color: $brand-two;
+				outline: 2px solid $brand-two;
+				background-color: $brand-one;
+				outline-color: $brand-two;
+			}
+
+			option {
+				font-weight: 700 !important;
+			}
+		}
 	}
 }

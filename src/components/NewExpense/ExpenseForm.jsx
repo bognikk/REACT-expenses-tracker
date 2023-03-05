@@ -27,7 +27,7 @@ const ExpnseForm = (props) => {
 			date: new Date(enteredDate),
 		};
 
-		props.onSaveExpanseData();
+		props.onSaveExpanseData(expenseData);
 
 		setEnteredTitle("");
 		setEnteredAmount("");

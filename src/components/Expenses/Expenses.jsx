@@ -7,10 +7,21 @@ import "./Expenses.scss";
 
 const Expenses = (props) => {
 	const [filteredYear, setFilteredYear] = useState("2020");
+	// const [priceClasses, setPriceClasses] = useState("");
 
 	const filterChangeHandler = (selectedYear) => {
 		setFilteredYear(selectedYear);
 	};
+
+	// const priceclassesHandler = (props) => {
+	// 	if (props.items[0].amount >= 100) {
+	// 		setPriceClasses("expense-item__price medium");
+	// 	} else if (props.items[0].amount >= 500) {
+	// 		setPriceClasses("expense-item__price high");
+	// 	} else {
+	// 		setPriceClasses("expense-item__price low");
+	// 	}
+	// };
 
 	return (
 		<>

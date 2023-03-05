@@ -1,5 +1,6 @@
 import Expenses from "./components/Expenses/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
+import Card from "./components/UI/Card";
 
 const App = () => {
 	const DUMMY_EXPENSES = [
@@ -31,6 +32,9 @@ const App = () => {
 
 	return (
 		<div>
+			<Card className="main-heading">
+				<h1>Expenses Tracker</h1>
+			</Card>
 			<NewExpense onAddExpense={addExpenseHandler} />
 			<Expenses items={DUMMY_EXPENSES} />
 		</div>

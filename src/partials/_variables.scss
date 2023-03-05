@@ -3,15 +3,24 @@ $margin: 1rem;
 $padding: 1rem;
 
 // media
-$mobile-breakpoint: 320px;
-$tablet-breakpoint: 768px;
-$desktop-breakpoint: 1280px;
+$screen-xxl: 1600px;
+$screen-xl: 1400px;
+$screen-lg: 1200px;
+$screen-md: 992px;
+$screen-sm: 768px;
+$screen-xs: 480px;
 
 // colors
 $primary-black: #323232;
 $secondary-white: #fafafa;
-$light-blue: #0095ff;
-$dark-blue: #0065ff;
-$silver-dark: #afafaf;
+$silver: #afafaf;
 $silver-light: #e1e1e1;
 
+$brand-one: #0075a2;
+$brand-two: #eaba6b;
+$brand-three: #0075a2;
+
+// $brand-one: #00d8ff;
+// $brand-four: #eaba6b;
+// $brand-two: #00ffc5;
+// $brand-five: #d55672;
