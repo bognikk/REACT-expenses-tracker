@@ -67,6 +67,15 @@
 			padding: 0.5rem 1.5rem;
 			font-size: 1.25rem;
 		}
+
+		&.medium {
+			background-color: #e4920e;
+			color: black;
+		}
+
+		&.high {
+			background-color: #c33c54;
+		}
 	}
 
 	button {
