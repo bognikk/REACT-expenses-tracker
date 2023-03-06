@@ -7,14 +7,30 @@
 	}
 
 	&__actions {
-		text-align: right;
+		text-align: center;
+
+		@media (min-width: $screen-xs) {
+			text-align: right;
+		}
 
 		@include tablet {
 			padding: 0 $padding * 4;
 		}
 
-		button:last-of-type {
-			margin-left: $margin;
+		button {
+			width: 55%;
+			@media (min-width: $screen-xs) {
+				width: auto;
+			}
+
+			&:last-of-type {
+				margin-top: $margin;
+
+				@media (min-width: $screen-xs) {
+					margin-left: $margin;
+					margin-top: 0;
+				}
+			}
 		}
 	}
 }

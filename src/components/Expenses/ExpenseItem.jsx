@@ -2,12 +2,12 @@ import Card from "../UI/Card";
 import ExpenseDate from "./ExpenseDate";
 import "./ExpenseItem.scss";
 
-const ExpenseItem = (props) => {
+const ExpenseItem = ({ amount, date, title }) => {
 	let priceClasses;
 
-	if (props.amount >= 100 && props.amount < 500) {
+	if (amount >= 100 && amount < 500) {
 		priceClasses = "expense-item__price medium";
-	} else if (props.amount >= 500) {
+	} else if (amount >= 500) {
 		priceClasses = "expense-item__price high";
 	} else {
 		priceClasses = "expense-item__price";
@@ -17,9 +17,9 @@ const ExpenseItem = (props) => {
 		<li>
 			<Card className="expense-item">
 				<div className="expense-item__description">
-					<ExpenseDate date={props.date} />
-					<h2 className="expense-item__title">{props.title}</h2>
-					<div className={priceClasses}>${props.amount}</div>
+					<ExpenseDate date={date} />
+					<h2 className="expense-item__title">{title}</h2>
+					<div className={priceClasses}>${amount}</div>
 				</div>
 				{/* <button>Remove</button> */}
 			</Card>
